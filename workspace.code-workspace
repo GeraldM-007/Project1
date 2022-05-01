@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "..\\Networking"
+		},
+		{
+			"path": ".."
+		}
+	],
+	"settings": {
+		"git.ignoreLimitWarning": true,
+		"liveServer.settings.multiRootWorkspaceName": "web development"
+	}
+}

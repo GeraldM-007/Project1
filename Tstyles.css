@@ -18,10 +18,9 @@ body{
     width: 100%;
     background-color: rgb(89, 153, 6);
     text-align: center;
-     position: -webkit-sticky; /* Safari */
-     position: sticky;
-     top: 0;
-     z-index: 1;
+    position: sticky;
+    top: 0;
+    z-index: 1;
 }
 /* designing  list contents*/
 .list ul{
@@ -86,13 +85,32 @@ to have a border bottom  */
     height: 100px;
     background-color: #fff;
 }
+.searchbox{
+    width: 100px;
+    padding: 30px 0 0 30%;
+    border-color: #000 1px;
+}
+/* placing the search button*/
+input[type=text] {
+    width: 300px;
+    border: 1px solid #000;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-image: url(searchicon.jpeg);
+    background-size: 30px;
+    background-position: 7px 8px; 
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+  }
 /* designing the slide frame */
 .slider-frame{
     overflow: hidden;
     height: 600px;
-    width: 1200px;
+    width: 1000px;
     margin-top: 10px;
-    margin-left: 300px;
+    margin-left: 30px;
+    margin-right: 30px;
 }
 /* -------slide animation----- */
 @-webkit-keyframes slide_animation{
@@ -111,21 +129,22 @@ to have a border bottom  */
 /* designing the image slides*/
 .slide-images{
     z-index: -1;
-    width: 1200px;
+    width: 2400px;
     height: 600px;
     margin: 0 0 0 -2400px;
     position: relative;
     -webkit-animation-name: slide_animation;
+    -webkit-animation-delay: 0;
     -webkit-animation-duration: 30s;
     -webkit-animation-iteration-count: infinite;
     -webkit-animation-direction: alternate;
     -webkit-animation-play-state: running;
 }
-/* designing the image containers */
+/* designing the image containers for the slide */
 .image-container{
 height: 600px;
 width: 1200px;
-position: relative;
+position: absolute;
 }
 .Container{
     height: 600px;
@@ -258,4 +277,4 @@ position: relative;
     height: 400px;
     margin-top: 10px;
     background-color: rgb(89, 153, 6);
-}
+}  
